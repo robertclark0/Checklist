@@ -1,0 +1,94 @@
+.main{
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top:50px;
+    background-color:rgb(248,248,248);
+    padding: 10px 30px 10px 30px;
+    border-radius:10px;
+}
+.title h1{
+    margin-left:0px;
+    font-size:1.8em;
+}
+li{
+    list-style-type: none;
+    margin-top:5px;
+}
+.Item{
+    background-color:white;
+}
+.list-left, .list-right{
+    background-color:rgb(235,235,235);
+}
+.list-left{
+    border-radius: 10px 0px 0px 10px;
+}
+.list-left a{
+    color:rgb(200,200,200);
+}
+.list-left a:focus{
+    color:rgb(200,200,200);
+}
+.list-left a:hover{
+    color:rgb(160,220,160);
+}
+
+.list-left i, .list-right i{
+    position: relative;
+    top: 50%;
+    transform: translateY(140%);
+}
+.list-right{
+    border-radius: 0px 10px 10px 0px;
+}
+.list-right a{
+    color:rgb(130,130,130);
+}
+
+.row {
+    display: flex;
+
+}
+.list-center{
+    width:100%;
+}
+.list-center h2{
+    margin-top:10px;
+    margin-bottom:7px;
+    font-size:1.6em;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight:500;
+}
+.diff{
+    float:left;
+}
+.due{
+    float:right;
+}
+.complete{
+    color:rgb(200,200,200) !important;
+    text-decoration: line-through;
+}
+.check{
+    color:rgb(82,202,0);
+}
+.add{
+    padding:25px 0px 0px 0px;
+}
+.add a{
+    color:rgb(130,130,130);
+}
+.newItem, .editItem{
+    background-color:white;
+    padding: 20px;
+    border-radius:10px;
+    margin-bottom:25px;
+}
+.orders{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.cr{
+    color:rgb(210,210,210);
+    font-size:0.75em;
+}

@@ -1,0 +1,33 @@
+<div class="editItem">
+
+    <div class="row">
+        <div class="col-sm-6">
+            <p>Edit Task</p>
+            <p>
+                <input type="text" placeholder="Task Title" ng-model="listItems[id].title">
+            </p>
+            <p>
+                <input type="text" placeholder="Task Description" ng-model="listItems[id].description">
+            </p>
+            <p>Task Difficulty: {{listItems[id].fibNum}}
+            <div class="btn-group">
+                <a class="btn btn-default" ng-click="listItems[id].fibNum = 1">1</a>
+                <a class="btn btn-default" ng-click="listItems[id].fibNum = 2">2</a>
+                <a class="btn btn-default" ng-click="listItems[id].fibNum = 3">3</a>
+                <a class="btn btn-default" ng-click="listItems[id].fibNum = 5">5</a>
+                <a class="btn btn-default" ng-click="listItems[id].fibNum = 8">8</a>
+                <a class="btn btn-default" ng-click="listItems[id].fibNum = 13">13</a>
+            </div>
+            </p>
+        </div>
+        <div class="col-sm-6">
+            <p>When is this task due?</p>
+            <input type="text" placeholder="9:00" ng-model="listItems[id].due">
+        </div>
+    </div>
+    <div>
+        <a class="btn" href="#/">Done</a>
+        <a href="#/" class="btn" ng-click="remove(listItems[id])">Delete</a>
+    </div>
+
+</div>

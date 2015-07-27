@@ -1,0 +1,32 @@
+<span>Order by:</span>
+<div class="btn-group orders">
+    <a href="" class="btn btn-default" ng-click="odata = 'status'">Status</a>
+    <a href="" class="btn btn-default" ng-click="odata = 'due'">Due</a>
+    <a href="" class="btn btn-default" ng-click="odata = 'fibNum'">Difficulty</a>
+    <a href="" class="btn btn-default" ng-click="odata = 'title'">A-Z</a>
+</div>
+<div class="checkList">
+    <li class="Item" ng-repeat="listItem in listItems | orderBy: odata">
+        <div ng-class="listItem.status === 'complete' ? 'complete' : ''">
+            <div class="row">
+                <div class="list-left col-sm-1">
+                    <a href="#/" ng-click="listItem.status === 'complete' ? listItem.status = 'incomplete' : listItem.status = 'complete'">
+                        <i ng-class="listItem.status === 'complete' ? 'check' : ''" class="fa fa-check-circle-o fa-2x"></i>
+                    </a>
+                </div>
+                <div class="list-center col-sm-10">
+                    <h2>{{ listItem.title }}</h2>
+                    <p><strong>notes:</strong> {{ listItem.description }}</p>
+                    <div class="diff">
+                        <h6>Due: {{ listItem.due }}</h6></div>
+                    <div class="due">
+                        <h6>Difficulty: {{ listItem.fibNum }}</h6></div>
+                </div>
+                <div class="list-right col-sm-1"><a href="#/itemSettings/{{$index}}"><i class="fa fa-cog fa-2x"></i></a></div>
+            </div>
+        </div>
+    </li>
+</div>
+<div class="add text-center">
+    <a href="#/newItem"><i class="fa fa-plus-circle fa-4x"></i></a>
+</div>

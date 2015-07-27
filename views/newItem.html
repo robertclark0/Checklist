@@ -1,0 +1,33 @@
+<div class="newItem">
+
+    <div class="row">
+        <div class="col-sm-6">
+            <p>New Task</p>
+            <p>
+                <input type="text" placeholder="Task Title" ng-model="newTask.title">
+            </p>
+            <p>
+                <input type="text" placeholder="Task Description" ng-model="newTask.description">
+            </p>
+            <p>Task Difficulty: {{newTask.fibNum}}
+            <div class="btn-group">
+                <a href="" class="btn btn-default" ng-click="newTask.fibNum = 1">1</a>
+                <a href="" class="btn btn-default" ng-click="newTask.fibNum = 2">2</a>
+                <a href="" class="btn btn-default" ng-click="newTask.fibNum = 3">3</a>
+                <a href="" class="btn btn-default" ng-click="newTask.fibNum = 5">5</a>
+                <a href="" class="btn btn-default" ng-click="newTask.fibNum = 8">8</a>
+                <a href="" class="btn btn-default" ng-click="newTask.fibNum = 13">13</a>
+            </div>
+            </p>
+        </div>
+        <div class="col-sm-6">
+            <p>When is this task due?</p>
+            <input type="text" placeholder="9:00" ng-model="newTask.due">
+        </div>
+    </div>
+    <div>
+        <a class="btn" href="#/">Discard</a>
+        <a class="btn" ng-click="addTask()" href="#/">Save</a>
+    </div>
+
+</div>

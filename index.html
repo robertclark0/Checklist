@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <title>Checklist App</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:500,400,300,100' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+</head>
+<body ng-app="checklistApp">
+<div class="main">
+    <div class="head">
+        <div class="title">
+            <h1>Checklist</h1>
+        </div>
+    </div>
+
+    <div ng-view></div>
+    <span class="cr">Created Robert Clark</span>
+</div>
+
+<!-- Angular.js-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+<script src="http://code.angularjs.org/1.2.1/angular-route.min.js"></script>
+
+<!-- Modules -->
+<script src="js/apps.js"></script>
+
+<!-- Controllers -->
+<script src="js/controllers.js"></script>
+
+<!-- Additional -->
+
+</body>
+</html>
