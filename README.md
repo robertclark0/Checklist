@@ -6,7 +6,7 @@ http://embed.plnkr.co/h160187ytEX1rxhp7FpQ/preview
 
 Quick
 ------
-Checklist is an Angular.js app to create and edit a basic task checklist. The app allows you to create, delete and update tasks and also mark then complete.
+Checklist is an Angular.js app to create and edit a basic task checklist. The app allows you to create, delete and update tasks and also mark them complete.
 
 Detail
 -------
@@ -14,7 +14,7 @@ The application has two major components. First is view routing. The application
 
 Running the Program
 --------------------
-The application is designed to run in the current folder configuration. The files must be hosted on a server that is AJAX enabled. It is not neccesary to install Angular, as the code uses the Google CDN hosted library. With files hosted, simple call index.html to run the application.
+The application is designed to run in the current folder configuration. The files must be hosted on a server that is AJAX enabled. It is not neccesary to install Angular, as the code uses the Google CDN hosted library. With files hosted, simply call index.html to run the application.
 
 Additional
 -----------
