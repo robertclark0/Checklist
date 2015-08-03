@@ -10,11 +10,11 @@ Checklist is an Angular.js app to create and edit a basic task checklist. The ap
 
 Detail
 -------
-The application has two major components. First is view routing. The application consists of three views: the list view, the new item view, and the edit item view. The information displayed in the views is generated dynaically by parsing URL data depending on which item was clicked. The second major component is the Factory. Initial checklist data items are stored in the factory, which at runtime is displayed in the list. Each new item or modification accesses, modifies or creates data in the factory. For the purposes of the scope of this project, the data was stored in the factory and not in an extenal source.
+The application has two major components. First is view routing. The application consists of three views: the list view, the new item view, and the edit item view. The information displayed in the views is generated dynamically by parsing URL data depending on which item was clicked. The second major component is the Factory. Initial checklist data items are stored in the factory, which at runtime is displayed in the list. Each new item or modification accesses, modifies or creates data in the factory. For the purposes of the scope of this project, the data was stored in the factory and not in an external source.
 
 Running the Program
 --------------------
-The application is designed to run in the current folder configuration. The files must be hosted on a server that is AJAX enabled. It is not neccesary to install Angular, as the code uses the Google CDN hosted library. With files hosted, simply call index.html to run the application.
+The application is designed to run in the current folder configuration. The files must be hosted on a server that is AJAX enabled. It is not necessary to install Angular, as the code uses the Google CDN hosted library. With files hosted, simply call index.html to run the application.
 
 Additional
 -----------
